@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Lobster', cursive;
+	background: #fff;
+}
+a{
+	text-decoration: none;
+}
+img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+h1{
+	font-size: 45px;
+}
+h2{
+	font-size: 40px;
+}
+h3{
+	font-size: 30px;
+}
+h4{
+	font-size: 25px;
+}
+h5{
+	font-size: 20px;
+}
+h6{
+	font-size: 15px;
+}
+.container{
+	width: 85%;
+	margin: 0 auto;
+
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    General CSS End
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    Header Area Start
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.header-area{
+	background: url(picture/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	position: relative;
+}
+	
+.header-overly{
+	background: rgba(0, 0, 0, .4);
+	height: 100vh;
+}
+.header-top{
+	padding: 20px 0;
+}
+
+.header-top-content{
+	display: flex;
+	justify-content: space-between;
+}
+.menu{
+	width: 75%;
+}
+.menu ul{
+	display: flex;
+	margin-top: 10px;
+}
+.menu ul li{
+	list-style: none;
+}
+.menu ul li a{
+	color: red;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 0 20px;
+	
+}
+.menu ul li a:hover{
+	color: blue;
+}
+.search{
+	width: 20%;
+}
+.header-bottom{}
+.search-bar{
+	background: #fff;
+	padding: 5px;
+	position: relative;
+	border-radius: 5px;
+}
+.search-bar input{
+	width: 100%;
+	box-sizing: border-box;
+	background: transparent;
+	border: none;
+}
+.search-bar input:focus{
+	outline: 0;
+}
+.search-bar button{
+	background: transparent;
+	border: none;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+.header-bottom{
+	width: 20%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.responsive-1{
+    display: none;
+}
+.responsive-1 i{
+	color: #fff;
+}
+.bars i{
+	color: #fff;
+	display: none;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    Header Area End
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    About Area
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+.about-section{
+	padding: 85px 0;
+}
+.section-title{
+	margin-bottom: 30px;
+	text-align: center;
+}
+.section-title h2{
+	color: red;
+}
+.section-title span{
+	color: orange;
+}
+.about-content{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+.about-left{
+	width: 45%;
+}
+.about-right{
+	width: 50%;
+}
+.about-right h4{
+	margin-bottom: 15px;
+	color: blue;
+}
+.about-right p{
+     color: red;
+     margin-bottom: 15px;
+     line-height: 1.5em;
+}
+.about-right button{
+	margin-top: 15px;
+	background: blue;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	transition: .4s;
+}
+.about-right button:hover{
+	cursor: pointer;
+	transform: translateY(-10px);
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    About Area End
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+   Team Area Start
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+.team-section{
+	background: #8395a7;
+	padding: 85px 0;
+}
+.members{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+.member{
+	width: 23.5%;
+	position: relative;
+	overflow: hidden;
+}
+.member-overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+.member-info{
+	text-align: center;
+}
+.member-info h4{
+	color: #fff;
+}
+.member-info ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.member-info ul li{
+	padding: 10px;
+}
+.member-info ul li a{
+	color: #fff;
+}
+.member:hover .member-overlay{
+	top: 0;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    Team Area End
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    Contact Area Start
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+.contact-section{
+	padding: 85px 0;
+}
+.contact-form{
+	width: 40%;
+	margin: 0 auto;
+}
+.contact-form label{
+	display: block;
+	font-size: 18px;
+	color: #c56cf0;
+}
+.user-name{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.user-name input{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+}
+.f-name{
+	width: 48%;
+}
+.l-name{
+	width: 48%;
+}
+.mail{
+	margin-bottom: 10px;
+}
+.mail input{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+}
+.msg{
+	margin-bottom: 10px;
+}
+.msg textarea{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+
+}
+.form-button input{
+	margin-top: 15px;
+	background: #c56cf0;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	transition: .4s;
+
+}
+.form-button input:hover{
+	cursor: pointer;
+	transform: translateY(-10px);
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    Contact Area End
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    Footer Area
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+footer{
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=
+    Footer Area End
+=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
